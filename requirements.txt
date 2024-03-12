@@ -5,3 +5,5 @@ scikit-learn==1.4.1
 numpy==1.26.3
 clickhouse-connect==0.7.2
 clickhouse-driver==0.2.7
+semchunk==0.2.3
+spacy==3.7.4
