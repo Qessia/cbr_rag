@@ -52,7 +52,7 @@ class Database:
 
 
 def split_text(text: str) -> list[str]:
-    chunk_size = 128 # A low chunk size is used here for demo purposes.
+    chunk_size = 128 # 1 token == 1 russian word
     nlp = Russian()
-    token_counter = lambda text: len(nlp(text)) # `token_counter` may be swapped out for any function capable of counting tokens.
+    token_counter = lambda text: len(nlp(text))
     return semchunk.chunk(text, chunk_size=chunk_size, token_counter=token_counter)
